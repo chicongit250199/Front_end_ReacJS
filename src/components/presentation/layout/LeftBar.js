@@ -20,7 +20,7 @@ class LeftBar extends Component {
                             <NavLink className="nav-link nav-toggle" to="/home">
                                 <i className="icon-home"></i>
                                 <span className="title bold">
-                                    Dashboard
+                                    My Car
                                 </span>
                                 <span className="selected"></span>
                                 <span className="arrow open"></span>

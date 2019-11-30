@@ -36,10 +36,14 @@ export default class LoginFunc extends Component {
         }
     }
     login() {
+        const username = this.state.username;
+        const password = this.state.password
         this.setState({
             loginLoader: true
-        })
-        PostData('login', { username: this.state.username, password: this.state.password }).then((result) => {
+        });
+        PostData('/auth/login', { username: username, password: password})
+        .then((result) => {
+            console.log(result);
             if (!result.token) {
                 this.setState({
                     error: true,
@@ -48,7 +52,9 @@ export default class LoginFunc extends Component {
             } else {
                 localStorage.setItem('userData', JSON.stringify({
                     name: result.username,
-                    id: result.engineerId,
+                    fullName: result.full_name,
+                    role: result.role,
+                    id: result.id,
                     token: result.token
                 }))
                 this.setState({

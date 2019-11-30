@@ -1,14 +1,26 @@
-export default function PostData(type, userData) {
-    let BaseUrl = 'http://si-enclave.herokuapp.com/api/v1/auth/'
-
+// import baseurl from ''
+export default function PostData(path, userData) 
+{
+    let BaseUrl = 'http://localhost:3000/api';
+    console.log('user data',userData);
+    const username = userData.username;
+    const password = userData.password;
     return new Promise((resolve, reject) =>{
-    fetch(BaseUrl + type, {
+    fetch(BaseUrl + path, {
         method: 'POST',
-        body: JSON.stringify(userData)
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
     })
         .then((response) =>response.json() )
         .then((responseJson) => {
-            resolve(responseJson)
+            resolve(responseJson);
+            console.log(responseJson);
         })
         .catch((error) => {
             reject(error)

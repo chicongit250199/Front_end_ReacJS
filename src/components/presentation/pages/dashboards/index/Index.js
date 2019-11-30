@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Stats from './Stats';
-import getTotal from '../../../../container/dashboard/GetTotal';
-import Action from './Action';
+// import getTotal from '../../../../container/dashboard/GetTotal';
+import ShowListCar from './showListCar';
+import getCar from '../../../../container/dashboard/getCar';
 
 class Index extends Component {
   constructor(props) {
@@ -10,35 +11,36 @@ class Index extends Component {
       data:null
     }
   }
-  async componentWillMount() {
-    const res = await getTotal();
+  async viewCar() {
+    const res = await getCar();
     this.setState({
       data: {
-        engineer: res.engineer,
-        project: res.project,
-        team: res.team,
-        manager: res.manager
+        id: res.id,
+        carName: res.name,
+        image:res.image_url
+        // team: res.team,
+        // manager: res.manager
       }
     });
   }
   render() {
     if(this.state.data) {
       return (
-        <div className="Home">
-          <Stats engineer={this.state.data.engineer}
-            project={this.state.data.project}
-            team={this.state.data.team}
-            manager={this.state.data.manager}
+        <div className="Care Take Care">
+          <Stats car={this.state.data.name}
+            // project={this.state.data.project}
+            // team={this.state.data.team}
+            // manager={this.state.data.manager}
           />     
           <div className="portlet light bordered">
             <div className="portlet-title">
               <div className="caption">
                 <i className="icon-bar-chart font-dark hide" />
-                <span className="caption-subject font-dark bold uppercase">Recent activities</span>
+                <span className="caption-subject font-dark bold uppercase">My Car</span>
               </div>
             </div>
             <div >
-              <Action />
+              <ShowListCar />
             </div>
           </div>
         </div>
@@ -59,11 +61,11 @@ class Index extends Component {
             <div className="portlet-title">
               <div className="caption">
                 <i className="icon-bar-chart font-dark hide" />
-                <span className="caption-subject font-dark bold uppercase">Recent activities</span>
+                <span className="caption-subject font-dark bold uppercase">My Car</span>
               </div>
             </div>
             <div >
-              <Action />
+              <ShowListCar />
             </div>
           </div>
         </div>     

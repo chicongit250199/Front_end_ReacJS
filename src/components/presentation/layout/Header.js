@@ -15,9 +15,9 @@ class Header extends Component {
                         <div className="havbar-header">
                             <NavLink to="/home" className="navbar-brand custom-background-white">
                                 <div className="logo-enclave">
-                                    <img src="/assets/pages/img/logos/enclave-logo.png" alt=""/>
+                                    <img src="/assets/pages/img/logos/logo.jpg" alt=""/>
                                     <span>
-                                        &nbsp; ENCLAVE IT
+                                        &nbsp; Car Take Care
                                     </span>
 
                                 </div>

@@ -30,9 +30,9 @@ function App() {
                             <div className="page-content-fixed-header">
                                 <ul className="page-breadcrumb">
                                     <li>
-                                        <a href="/">Dashboard</a>
+                                        <a href="/">My Car</a>
                                     </li>
-                                    <li>Admin Dashboard</li>
+                                    
                                 </ul>
                                 <div className="content-header-menu">
                                     <button type="button" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">

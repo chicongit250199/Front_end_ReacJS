@@ -23,7 +23,7 @@ class RouterURL extends Component {
   render() {
     return (
         <div className="MainRouter">
-          <Route  exact path="/login" component={LoginFunc} /> 
+          <Route exact path="/login" component={LoginFunc} /> 
           <Route exact path="/" component={Index} />
           <Route exact path="/home" component={Index} />
           <Route exact path="/dashboard1" component={Dashboard1} />
