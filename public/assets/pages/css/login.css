@@ -8,7 +8,7 @@ Login page
 
 .login .logo {
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 10px;
   padding: 15px;
   text-align: center; }
 
@@ -142,7 +142,11 @@ Login page
   float: right;
   display: inline-block;
   margin-top: 10px; }
-
+  .login .content .register {
+    font-size: 14px;
+    float: left;
+    display: inline-block;
+    margin-top: 10px; }
 .login .content .check {
   color: #8290a3; }
 
@@ -184,7 +188,12 @@ Login page
   Login page
   ***/
   .login .logo {
-    margin-top: 10px; }
+    /* align:center; */
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .login .content {
     width: 280px;
     margin-top: 10px; }
@@ -198,3 +207,90 @@ Login page
     padding-top: 3px; }
   .login .checkbox {
     font-size: 13px; } }
+
+
+
+    .form-register {
+      background: #e4f2f5;
+      opacity: 80%;
+      width: 100%;
+      height: auto;
+      margin-top: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      border: indigo 1px solid;
+      border-radius: 5%;
+  }
+    .form-register .lableregister{
+      text-align: center;
+      color: #000;
+      font-size:  28;
+    }
+    .form-register .lableregister .registerlb {
+      text-align: center;
+      font-family: initial;
+      color: #000;
+      font-size: 5em;
+      margin-bottom: 5%;
+  }
+  /* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

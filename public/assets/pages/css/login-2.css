@@ -119,7 +119,8 @@ Login page
 .login .content .register-form .form-actions {
   border: 0;
   margin-bottom: 0;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  }
 
 .login .content .form-actions .checkbox {
   margin-top: 8px;
@@ -127,6 +128,14 @@ Login page
 
 .login .content .form-actions .btn {
   margin-top: 1px; }
+  .login .content .login-form .row .text-right{
+    float: right;
+  }
+  .login .content .form-actions .row .text-left{
+    float: left;
+    color: indigo;
+  }
+
 
 .login .btn {
   background-color: #5995bb;

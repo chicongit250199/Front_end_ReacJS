@@ -64,19 +64,14 @@ export default class RowData extends Component {
                     <Link to={`/engineer/${this.props.id}`}>
                         <span 
                             className=" margin-bottom-5 margin-top-5 link-name-data">
-                            {this.props.englishName} 
+                            {this.props.name} 
                         </span>
                     </Link>
                 </td>
                 <td className="highlight">
-                    <span>{this.props.firstName} </span> {this.props.lastName}
+                    <span>{this.props.registration_no} </span>
                 </td>
-                <td className="highlight">
-                    <a href={"mailto:" + this.props.email}>
-                        {this.props.email}</a>
-                </td>
-                <td>{this.props.phoneNumber}</td>
-                <td >{this.props.expYear}</td>
+                
                 <td>
                     <div className="flex-center">
                         <button onClick={()=>this.toggleModalEdit()} className="btn btn-outline green btn-sm green margin-bottom-5 margin-top-5" >

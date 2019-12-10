@@ -21,6 +21,8 @@ class EditForm extends Component {
     this.setState({ tags })
   }
   async componentDidMount() {
+    let id = localStorage.getItem('userData','userId');
+    console.log(id);
     const res = await getData(this.state.id);
     console.log(res.skills)
     res.skills.forEach(element => {
