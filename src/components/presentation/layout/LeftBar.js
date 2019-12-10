@@ -17,15 +17,15 @@ class LeftBar extends Component {
               </NavLink>
             </li> */}
                         <li className="nav-item start">
-                            <NavLink className="nav-link nav-toggle" to="/home">
+                            {/* <NavLink className="nav-link nav-toggle" to="/home">
                                 <i className="icon-home"></i>
                                 <span className="title bold">
                                     My Car
                                 </span>
                                 <span className="selected"></span>
                                 <span className="arrow open"></span>
-                            </NavLink>
-                            <ul className="sub-menu">
+                            </NavLink> */}
+                            {/* <ul className="sub-menu">
                                 <li className="nav-item start">
                                     <NavLink
                                         to="/dashboard1"
@@ -34,7 +34,7 @@ class LeftBar extends Component {
                                     }}>
                                         <i className="icon-graph"></i>
                                         <span className="title">
-                                            Cash flow dashboard
+                                            Refuel
                                         </span>
                                     </NavLink>
                                 </li>
@@ -46,11 +46,11 @@ class LeftBar extends Component {
                                     }}>
                                         <i className="icon-user-female"></i>
                                         <span className="title">
-                                            Human dashboard
+                                            Product
                                         </span>
                                     </NavLink>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </li>
                         <li className="nav-item start">
                             <NavLink
@@ -60,11 +60,11 @@ class LeftBar extends Component {
                             }}>
                                 <i className="icon-user-following"/>
                                 <span className="title bold">
-                                    Engineer
+                                    My Car
                                 </span>
                             </NavLink>
                         </li>
-                        <li className="nav-item start">
+                        {/* <li className="nav-item start">
                             <NavLink
                                 to="/team"
                                 activeStyle={{
@@ -88,7 +88,7 @@ class LeftBar extends Component {
                                 </span>
 
                             </NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

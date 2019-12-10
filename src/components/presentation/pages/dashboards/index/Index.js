@@ -18,8 +18,6 @@ class Index extends Component {
         id: res.id,
         carName: res.name,
         image:res.image_url
-        // team: res.team,
-        // manager: res.manager
       }
     });
   }

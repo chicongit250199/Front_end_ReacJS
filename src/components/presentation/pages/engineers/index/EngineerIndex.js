@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TableData from './TableData';
 
-class EngineerIndex extends Component {
+class MyCar extends Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
@@ -13,7 +13,7 @@ class EngineerIndex extends Component {
   }
   render() {
     return (
-      <div className="EngineerIndex" >
+      <div className="MyCar" >
         <div className="row">
         <div className="col-md-12">
             <div className="portlet box">
@@ -25,4 +25,4 @@ class EngineerIndex extends Component {
     );
   }
 }
-export default EngineerIndex;
+export default MyCar;

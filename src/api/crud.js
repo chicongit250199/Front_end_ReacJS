@@ -1,11 +1,12 @@
 import { get, post, put, del } from './utils';
 
 export async function getAllApi(resource, data) {
+    console.log(resource);
     return get(`/${resource}`, data);
 }
 
 export async function getDataByIdApi(resource, id, data) {
-    return get(`/${resource}/${id}`, data);
+    return get(`/${resource}`, data);
 }
 
 export async function delApi(resource, id) {

@@ -57,6 +57,8 @@ export default class LoginFunc extends Component {
                     id: result.id,
                     token: result.token
                 }))
+                localStorage.setItem('userId',JSON.stringify({
+                    userId: result.id}))
                 this.setState({
                     redirect: true
                 })
@@ -82,12 +84,12 @@ export default class LoginFunc extends Component {
         let error = (this.state.error) ? (<div className="alert alert-danger">
             <strong>Error!</strong> Username or Password is not correct.</div>) : null
         return (
-
-            <div className="login" >
+            <div className="login">
                 <div className="content">
                     <div className="logo">
                         <a href="/login">
-                            <img src="https://cdn.itviec.com/employers/enclave/logo/w170/Jh9Wg4u5AojsvtWicfNPjVge/enclave-logo.png" alt="" /> </a>
+                            <img src="/assets/pages/img/logos/logo.jpg" alt="" align="middle"/>
+                         </a>
                     </div>
                     <div className="login-form">
                         <h3 className="form-title font-green">Sign In</h3>
@@ -121,14 +123,34 @@ export default class LoginFunc extends Component {
                                 {/* <button type="submit" className="btn green uppercase" >Login</button> */}
                                 <div className="padding-tb-15">
                                     {this.display()}
+                                {/* <tr>
+                                    <td>
+                                    <Link to="/forgotPassword" id="forget-password" className="forget-password">Forgot Password?</Link>
+                                    <CheckButton style={{ display: 'none' }} ref={c => { this.checkBtn = c }} />
+                                    </td>
+                                    <td>
+                                    <Link to="/forgotPassword" id="forget-password" className="forget-password">Register</Link>
+                                     <CheckButton style={{ display: 'none' }} ref={c => { this.checkBtn = c }} />
+                                    </td>
+                                </tr> */}
                                 </div>
+                        <div class=" row">
+                            <div class="col-6 text-left">
                                 <Link to="/forgotPassword" id="forget-password" className="forget-password">Forgot Password?</Link>
+                             <CheckButton style={{ display: 'none' }} ref={c => { this.checkBtn = c }} />
+                             </div>
+                            <div class="col-6 text-right">
+                                <Link to="/register" id="register" className="register">Register</Link>
                                 <CheckButton style={{ display: 'none' }} ref={c => { this.checkBtn = c }} />
                             </div>
+                        </div>
+                                </div>
+                            {/* </div> */}
                         </Form>
                     </div>
                 </div>
             </div>
+        //  </div>
         )
     }
 }

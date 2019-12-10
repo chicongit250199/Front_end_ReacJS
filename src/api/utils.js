@@ -75,7 +75,7 @@ function requestWrapper(method) {
             // is it a GET? GET doesn't have data
             convertParams = convertData;
             if (convertParams !== null) {
-                convertUrl = `${convertUrl}?${getQueryString(convertParams)}`;
+                // convertUrl = `${convertUrl}?${getQueryString(convertParams)}`;
             }
             convertData = null;
         } else if (convertData === Object(convertData)) {

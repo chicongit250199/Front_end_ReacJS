@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <div className="Footer">
                 <p className="copyright-v2"> 2019 &copy; Made with love By
-                    <a target="_blank" href="/home"> Team 2</a>                    
+                    <a target="_blank" href="/home"> Chi Cong Mai</a>                    
                 </p>
             </div>
         );
