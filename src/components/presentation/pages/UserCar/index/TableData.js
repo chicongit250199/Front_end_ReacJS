@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import RowData from './RowData';
 import Pagination from "react-js-pagination";
 import Modal from '../../../commons/modal/Modal';
-import AddForm from '../../engineers/add/AddForm';
+import AddForm from '../add/AddForm';
 import {ClipLoader} from 'react-spinners';
 // import _ from 'lodash';
 // import EngineerContainer from "../../../../container/engineer";

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import ViewForm from './../../engineers/view/ViewForm';
-import Modal from './../../../../presentation/commons/modal/Modal';
-import EditForm from './../../engineers/edit/EditForm';
-import DeletePopUp from './../../engineers/delete/DeletePopUp';
+import ViewForm from '../view/ViewForm';
+import Modal from '../../../commons/modal/Modal';
+import EditForm from '../edit/EditForm';
+import DeletePopUp from '../delete/DeletePopUp';
 // import DelEngineer from "./../../../../container/engineer/DelEngineer";
 // import MSGDelete from '../../../commons/msg/MSGDelete';
 // import MSGSuccess from '../../../commons/msg/MSGSuccess';
